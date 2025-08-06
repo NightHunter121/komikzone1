@@ -21,13 +21,26 @@
     },
     {
         "id": 2,
-        "judul": "Judul Komik Dua",
+        "judul": "Arcane Sniper",
         "gambar": "images/cover2.jpg",
         "chapters": [
             {
-                "judul": "Chapter 45",
+                "judul": "Chapter 1",
                 "gambar": [
-                    "images/cover2/chapter1/002.jpg"
+                    "images/cover2/chapter1/001.jpg",
+                    "images/cover2/chapter1/002.jpg",
+                    "images/cover2/chapter1/003.jpg",
+                    "images/cover2/chapter1/004.jpg",
+                    "images/cover2/chapter1/005.jpg",
+                    "images/cover2/chapter1/006.jpg",
+                    "images/cover2/chapter1/007.jpg"
+                ]
+            },
+            {
+                "judul": "chapter 2",
+                "gambar": [
+                    "images/cover2/chapter2/001.jpg"
+                
                 ]
             }
         ]
