@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "judul": "Judul Komik Satu",
+        "gambar": "images/cover1.jpg",
+        "chapters": [
+            {
+                "judul": "Chapter 1",
+                "gambar": [
+                    "images/cover1/chapter1/001.jpg",
+                    "images/cover1/chapter1/002.jpg"
+                ]
+            },
+            {
+                "judul": "Chapter 2",
+                "gambar": [
+                    "images/cover1/chapter2/001.jpg"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "judul": "Judul Komik Dua",
+        "gambar": "images/cover2.jpg",
+        "chapters": [
+            {
+                "judul": "Chapter 45",
+                "gambar": [
+                    "images/cover2/chapter1/002.jpg"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "judul": "Judul Komik Tiga",
+        "gambar": "images/cover3.jpg",
+        "chapters": [
+            {
+                "judul": "Chapter 45",
+                "gambar": [
+                    "images/cover3/chapter1/002.jpg"
+                ]
+            }
+        ]
+    }
+]

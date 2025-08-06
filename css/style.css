@@ -1,0 +1,258 @@
+body {
+    font-family: 'Comic Neue', cursive, Arial, sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Header */
+.header {
+    background-color: #1e1e1e;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e53935;
+}
+
+/* --- CSS UNTUK SLIDE SEARCH BAR --- */
+.search-container {
+    position: relative;
+}
+
+.search-toggle-btn {
+    background-color: transparent;
+    border: none;
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.search-toggle-btn:hover {
+    color: #e53935;
+}
+
+.search-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    
+    transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.4s ease-in-out;
+    
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding-right: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.search-box.active {
+    width: 250px;
+    opacity: 1;
+    padding-right: 1.5rem;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    box-sizing: border-box;
+}
+
+/* --- AKHIR CSS UNTUK SLIDE SEARCH BAR --- */
+
+
+/* Main */
+.main-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    border-bottom: 2px solid #e53935;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Komik List */
+.komik-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .komik-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .komik-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.komik-item {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.komik-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.komik-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.chapter-info {
+    color: #a0a0a0;
+}
+
+/* Detail Komik */
+.komik-detail {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+.komik-detail img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#chapterList {
+    list-style: none;
+    padding: 0;
+}
+
+#chapterList li {
+    background: #2a2a2a;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#chapterList li:hover {
+    background: #e53935;
+    color: white;
+}
+
+/* Baca Chapter */
+.chapter-view {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.chapter-images img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Tombol */
+.close-btn {
+    background: #e53935;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.close-btn:hover {
+    background: #c62828;
+}
+
+/* Footer */
+.footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #333;
+    color: #aaa;
+}
+
+/* --- Styling untuk fitur bookmark --- */
+.bookmark-toggle-btn {
+    background: #555;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.bookmark-toggle-btn.bookmarked {
+    background: #e53935;
+}
+
+.top-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.show-bookmark-btn {
+    background: #03a9f4;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.show-bookmark-btn:hover {
+    background: #039be5;
+}
+
+#sectionTitle.bookmark-title {
+    color: #03a9f4;
+}

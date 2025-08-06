@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KomikZone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><a href="#">KomikZone</a></div>
+        
+        <div class="search-container">
+            <button id="searchButton" class="search-toggle-btn">
+                <i class="fas fa-search"></i>
+            </button>
+            <div id="searchBox" class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari komik..." onkeyup="searchKomik()">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="top-controls">
+            <h2 id="sectionTitle" class="section-title">Komik Terbaru</h2>
+            <button id="showBookmarkBtn" class="show-bookmark-btn">Lihat Bookmark</button>
+        </div>
+
+        <div id="komikList" class="komik-list"></div>
+
+        <div id="bookmarkList" class="komik-list" style="display:none;"></div>
+        
+        <div id="komikDetail" class="komik-detail" style="display:none;">
+            <button onclick="closeDetail()" class="close-btn">Kembali</button>
+            
+            <button id="bookmarkToggleBtn" class="bookmark-toggle-btn"></button>
+
+            <h2 id="detailJudul"></h2>
+            <img id="detailGambar" src="" alt="Cover Komik">
+            <h3>Daftar Chapter</h3>
+            <ul id="chapterList"></ul>
+        </div>
+
+        <div id="chapterView" class="chapter-view" style="display:none;">
+            <button onclick="closeChapter()" class="close-btn">Kembali ke Komik</button>
+            <h2 id="chapterTitle"></h2>
+            <div id="chapterImages" class="chapter-images"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 KomikZone. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
