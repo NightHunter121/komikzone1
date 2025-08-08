@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
     navItems.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
-            // Cek apakah item adalah tombol profil
             if (e.currentTarget.id === 'userProfileBtn') {
                 document.getElementById('authModal').style.display = 'block';
                 return;
@@ -83,22 +82,53 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    // Placeholder untuk handle form submission
-    loginSubmitForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const username = e.target.elements['login-username'].value;
-        const password = e.target.elements['login-password'].value;
-        console.log(`Login attempt: Username=${username}, Password=${password}`);
-        alert('Ini hanya frontend. Logic backend untuk login perlu diimplementasi.');
-    });
-
-    registerSubmitForm.addEventListener('submit', (e) => {
+    // Ini adalah kode yang menggunakan FETCH untuk terhubung ke Netlify Functions
+    registerSubmitForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         const username = e.target.elements['register-username'].value;
         const email = e.target.elements['register-email'].value;
         const password = e.target.elements['register-password'].value;
-        console.log(`Register attempt: Username=${username}, Email=${email}, Password=${password}`);
-        alert('Ini hanya frontend. Logic backend untuk registrasi perlu diimplementasi.');
+
+        try {
+            const response = await fetch('/.netlify/functions/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, email, password }),
+            });
+            const data = await response.json();
+            alert(data.message);
+            if (response.ok) {
+                document.getElementById('authModal').style.display = 'none';
+            }
+        } catch (error) {
+            alert('Terjadi kesalahan saat mendaftar. Silakan coba lagi.');
+        }
+    });
+
+    loginSubmitForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const username = e.target.elements['login-username'].value;
+        const password = e.target.elements['login-password'].value;
+        
+        try {
+            const response = await fetch('/.netlify/functions/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, password }),
+            });
+            const data = await response.json();
+            alert(data.message);
+            if (response.ok) {
+                console.log('Pengguna berhasil login:', data.user);
+                document.getElementById('authModal').style.display = 'none';
+            }
+        } catch (error) {
+            alert('Terjadi kesalahan saat login. Silakan coba lagi.');
+        }
     });
     // --- Akhir Logika untuk Modal Login/Sign-up ---
 });
