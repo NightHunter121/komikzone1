@@ -1,17 +1,24 @@
 [
   {
     "id": 1,
-    "judul": "Goblin Menjadi Dewa Goblin",
-    "gambar": "images/cover1.jpg",
-    "sinopsis": "Seorang goblin lemah harus berjuang keras untuk menjadi dewa goblin terkuat dan melindungi sukunya dari ancaman manusia.",
+    "judul": "Arcane Sniper",
+    "gambar": "images/arcane-sniper/ArcaneSniperCV.jpg",
+    "sinopsis": "kosong dulu gaes admin males>
     "status": "Ongoing",
     "rating": "4.8",
     "chapters": [
       {
         "judul": "Chapter 1",
         "gambar": [
-           "images/cover1/chapter1/001.jpg",
-           "images/cover1/chapter1/002.jpg"
+           "images/arcane-siper/chapter1/001.jpg",
+           "images/arcane-siper/chapter1/002.jpg",
+           "images/arcane-siper/chapter1/003.jpg",
+           "images/arcane-siper/chapter1/004.jpg",
+           "images/arcane-siper/chapter1/005.jpg",
+           "images/arcane-siper/chapter1/006.jpg",
+           "images/arcane-siper/chapter1/007.jpg",
+           "images/arcane-siper/chapter1/008.jpg",
+           "images/arcane-siper/chapter1/009.jpg"
           ]
       },
       {
@@ -27,17 +34,17 @@
     "id": 2,
     "judul": "After Rebirth, I",
     "gambar": "images/rebirth.jpg",
-    "sinopsis": "Setelah terlahir kembali, seorang pahlawan wanita yang kuat kembali ke masa lalu untuk memperbaiki kesalahan dan mencegah tragedi di masa depan.",
+    "sinopsis": "Setelah terlahir kembali, seorang pahlawan wan>
     "status": "Complete",
     "rating": "4.5",
     "chapters": [
       {
         "judul": "Chapter 1",
-        "gambar": ["images/rebirth-ch1-p1.jpg", "images/rebirth-ch1-p2.jpg"]
+        "gambar": ["images/rebirth-ch1-p1.jpg", "images/rebirth>
       },
       {
         "judul": "Chapter 2",
-        "gambar": ["images/rebirth-ch2-p1.jpg", "images/rebirth-ch2-p2.jpg"]
+        "gambar": ["images/rebirth-ch2-p1.jpg", "images/rebirth>
       }
     ]
   }
