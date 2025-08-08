@@ -3,7 +3,7 @@
     "id": 1,
     "judul": "Arcane Sniper",
     "gambar": "images/arcane-sniper/ArcaneSniperCV.jpg",
-    "sinopsis": "kosong dulu gaes admin males"
+    "sinopsis": "kosong dulu gaes admin males",
     "status": "Ongoing",
     "rating": "4.8",
     "chapters": [
@@ -34,17 +34,21 @@
     "id": 2,
     "judul": "After Rebirth, I",
     "gambar": "images/rebirth.jpg",
-    "sinopsis": "Setelah terlahir kembali, seorang pahlawan wan>
+    "sinopsis": "mbuh",
     "status": "Complete",
     "rating": "4.5",
     "chapters": [
       {
         "judul": "Chapter 1",
-        "gambar": ["images/rebirth-ch1-p1.jpg", "images/rebirth>
+        "gambar": [
+              "images/rebirth-ch1-p1.jpg", 
+              "images/rebirth.jpg"
       },
       {
         "judul": "Chapter 2",
-        "gambar": ["images/rebirth-ch2-p1.jpg", "images/rebirth>
+        "gambar": [
+              "images/rebirth-ch2-p1.jpg",
+              "images/rebirth.jpg"
       }
     ]
   }
