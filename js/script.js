@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
     navItems.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
+            // Cek apakah item adalah tombol profil
+            if (e.currentTarget.id === 'userProfileBtn') {
+                document.getElementById('authModal').style.display = 'block';
+                return;
+            }
+
             const page = e.currentTarget.dataset.page;
             navItems.forEach(nav => nav.classList.remove('active'));
             e.currentTarget.classList.add('active');
@@ -45,8 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     
+    // --- Logika untuk Modal Login/Sign-up ---
     const modal = document.getElementById('authModal');
-    const userProfileBtn = document.getElementById('userProfileBtn');
     const closeBtn = document.querySelector('.modal .close-btn');
     const showLoginBtn = document.getElementById('showLogin');
     const showRegisterBtn = document.getElementById('showRegister');
@@ -54,10 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const registerForm = document.getElementById('registerForm');
     const loginSubmitForm = document.getElementById('login-form');
     const registerSubmitForm = document.getElementById('register-form');
-
-    userProfileBtn.onclick = () => {
-        modal.style.display = 'block';
-    }
 
     closeBtn.onclick = () => {
         modal.style.display = 'none';
@@ -81,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
+    // Placeholder untuk handle form submission
     loginSubmitForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const username = e.target.elements['login-username'].value;
@@ -97,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(`Register attempt: Username=${username}, Email=${email}, Password=${password}`);
         alert('Ini hanya frontend. Logic backend untuk registrasi perlu diimplementasi.');
     });
+    // --- Akhir Logika untuk Modal Login/Sign-up ---
 });
 
 function showPage(pageName) {
