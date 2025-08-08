@@ -1,4 +1,4 @@
-[[
+[
   {
     "id": 1,
     "judul": "Goblin Menjadi Dewa Goblin",
@@ -16,7 +16,10 @@
       },
       {
         "judul": "Chapter 2",
-        "gambar": ["images/goblin-ch2-p1.jpg", "images/goblin-ch2-p2.jpg"]
+        "gambar": [
+                "images/goblin-ch2-p1.jpg",
+                "images/goblin-ch2-p2.jpg"
+         ]
       }
     ]
   },
