@@ -10,15 +10,15 @@
       {
         "judul": "Chapter 1",
         "gambar": [
-           "images/arcane-siper/chapter1/001.jpg",
-           "images/arcane-siper/chapter1/002.jpg",
-           "images/arcane-siper/chapter1/003.jpg",
-           "images/arcane-siper/chapter1/004.jpg",
-           "images/arcane-siper/chapter1/005.jpg",
-           "images/arcane-siper/chapter1/006.jpg",
-           "images/arcane-siper/chapter1/007.jpg",
-           "images/arcane-siper/chapter1/008.jpg",
-           "images/arcane-siper/chapter1/009.jpg"
+           "images/arcane-sniper/chapter1/001.jpg",
+           "images/arcane-sniper/chapter1/002.jpg",
+           "images/arcane-sniper/chapter1/003.jpg",
+           "images/arcane-sniper/chapter1/004.jpg",
+           "images/arcane-sniper/chapter1/005.jpg",
+           "images/arcane-sniper/chapter1/006.jpg",
+           "images/arcane-sniper/chapter1/007.jpg",
+           "images/arcane-sniper/chapter1/008.jpg",
+           "images/arcane-sniper/chapter1/009.jpg"
           ]
       },
       {
@@ -41,14 +41,16 @@
       {
         "judul": "Chapter 1",
         "gambar": [
-              "images/rebirth-ch1-p1.jpg", 
+              "images/rebirth-ch1-p1.jpg",
               "images/rebirth.jpg"
+         ]
       },
       {
         "judul": "Chapter 2",
         "gambar": [
               "images/rebirth-ch2-p1.jpg",
               "images/rebirth.jpg"
+         ]
       }
     ]
   }
